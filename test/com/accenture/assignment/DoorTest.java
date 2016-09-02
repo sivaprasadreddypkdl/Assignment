@@ -56,14 +56,14 @@ public class DoorTest {
 	
 	@Test()
 	public void test_getState_with_door_close() {
-		Assert.assertEquals(State.CLOSE, door.getState());
+		Assert.assertEquals("Close", door.getState());
 		
 	}
 	
 	@Test()
 	public void test_getState_with_door_open() throws AlreadyOpen {
 		door.open();
-		Assert.assertEquals(State.OPEN, door.getState());
+		Assert.assertEquals("Open", door.getState());
 	}
 	
 	@Test

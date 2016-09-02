@@ -14,13 +14,11 @@ import com.accenture.assignment.exception.InvalidDoorsCount;
 public class DoorRunner {
 	
 	// Holds the doors
-	private final Door[] doors;
+	private final Door[] doors;																
 
 	/**
 	 * It's is mandatory to mention the door count before going through the iterations.
-	 * 
-	 * @param count
-	 *            doors count
+	 * @param count doors count
 	 * @throws InvalidDoorsCount
 	 */
 	public DoorRunner(int count) throws InvalidDoorsCount {
@@ -54,7 +52,10 @@ public class DoorRunner {
 			throw new InvalidDoorNumber();
 		}
 	}
-	
+	/*
+	 * toggle the door with n iterations
+	 * 
+	 */
 	public void run() throws AlreadyClosed, AlreadyOpen, InvalidDoorNumber{
 		for(int i=1;i<=doors.length;i++){
 			int doorNumber=i;

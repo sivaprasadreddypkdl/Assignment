@@ -61,8 +61,8 @@ public class Door implements OpenOperation,CloseOperation{
 		return status;
 	}
 	
-	public State getState(){
-		return isOpen()?State.OPEN:State.CLOSE;
+	public String getState(){
+		return isOpen()?"Open":"Close";
 	}
 	
 	public int getNumber(){
